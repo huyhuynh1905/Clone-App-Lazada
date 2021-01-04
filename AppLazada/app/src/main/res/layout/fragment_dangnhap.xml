@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="7dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+        <com.huyhuynh.applazada.customview.CustomEdittextEmailDangNhap
+            android:id="@+id/edtEmailDangNhap"
+            android:hint="Email"
+            android:textColor="#271C1C"
+            android:textColorHint="#494141"
+            android:textColorHighlight="#494141"
+            android:layout_width="match_parent"
+            android:textSize="20dp"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.huyhuynh.applazada.customview.CustomEditextPassword
+            android:id="@+id/edtMatKhauDangNhap"
+            android:hint="Mật khẩu"
+            android:textColor="#271C1C"
+            android:textColorHint="#494141"
+            android:textColorHighlight="#494141"
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:useStrike="true"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tvQuenMatKhau"
+        android:text="Quên mật khẩu?"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="right"
+        android:textColor="#03A9F4"
+        android:layout_margin="10dp"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:text="Đăng Nhập"
+        android:textAllCaps="false"
+        android:background="@drawable/custom_button_login"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:text="Hoặc đăng nhập bằng"
+        android:layout_gravity="center"
+        android:textColor="#000000"
+        android:textSize="17sp"
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/btnLoginWithFacebook"
+            android:drawableLeft="@drawable/facebookiconsmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_button_login_facebook"
+            android:text="Facebook"
+            android:layout_margin="5dp"
+            android:textColor="@color/colorFacebook"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btnLoginWithGoogle"
+            android:drawableLeft="@drawable/googleplussmall"
+            android:text="Google"
+            android:layout_margin="5dp"
+            android:textColor="@color/colorGoogle"
+            android:background="@drawable/custom_button_login_google"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycle_DienTuFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:layout_margin="5dp"
+            android:src="@drawable/quangcao"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <FrameLayout
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/backgroundplashscreen"/>
+                <TextView
+                    android:textColor="#FFFFFF"
+                    android:text="Khuyến mãi Lazada!"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:paddingTop="40dp"
+                    android:background="#BC574E4E"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </FrameLayout>
+            <FrameLayout
+                android:layout_weight="1"
+                android:layout_margin="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/km1"/>
+                <TextView
+                    android:textColor="#FFFFFF"
+                    android:text="Thoã sức mua sắm trên ứng dụng!"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:paddingTop="40dp"
+                    android:background="#BC574E4E"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <FrameLayout
+                android:layout_weight="1"
+                android:layout_margin="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/km2"/>
+                <TextView
+                    android:textColor="#FFFFFF"
+                    android:text="Hàng ngàn khuyến mãi trên mọi mặt hàng!"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:paddingTop="40dp"
+                    android:background="#BC574E4E"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </FrameLayout>
+            <FrameLayout
+                android:layout_weight="1"
+                android:layout_margin="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/km3"/>
+                <TextView
+                    android:textColor="#FFFFFF"
+                    android:text="Nhanh tay chọn sản phẩm mà mình yêu thích!"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:paddingTop="40dp"
+                    android:background="#BC574E4E"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cần điền tất cả các mục"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_edtHoTenDangKi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <EditText android:id="@+id/edtHoTenDk"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:hint="Họ tên đầy đủ"/>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_edtEmailDangKi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <EditText android:id="@+id/edtEmailDk"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:hint="Địa chỉ Email"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_edtPassDangKi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <com.huyhuynh.applazada.customview.CustomEditextPassword
+                android:id="@+id/edtPassDk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mật khẩu"
+                app:useStrike="true"
+                app:useValid="true"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:text="Mật khẩu phải bao gồm 6 kí tự và chữ viết hoa"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_edtNhapLaiPassDangKi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <com.huyhuynh.applazada.customview.CustomEditextPassword
+                android:id="@+id/edtNhapLaiPassDk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nhập lại mật khẩu"
+                app:useStrike="true"
+                app:useValid="true"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switchThongBao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tôi muốn nhận các khuyến mãi độc quyền qua email"
+            android:checked="true"
+            android:layout_margin="10dp"/>
+
+        <Button
+            android:id="@+id/btnDangKi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:padding="10dp"
+            android:background="@drawable/custom_button_login"
+            android:text="Đăng Kí"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tôi đã đọc và hiểu rõ các điều khoản của Lazada "
+            android:layout_marginTop="10dp"/>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:id="@+id/btnRegisterWFacebook"
+                android:drawableLeft="@drawable/facebookiconsmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_button_login_facebook"
+                android:text="Facebook"
+                android:layout_margin="5dp"
+                android:textColor="@color/colorFacebook"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/btnRegisterWGoogle"
+                android:drawableLeft="@drawable/googleplussmall"
+                android:text="Google"
+                android:layout_margin="5dp"
+                android:textColor="@color/colorGoogle"
+                android:background="@drawable/custom_button_login_google"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

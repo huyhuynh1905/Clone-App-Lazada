@@ -1,0 +1,26 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/bgLogo</item>
+    </style>
+
+    <style name="capTextFalse" parent="TextAppearance.Design.CollapsingToolbar.Expanded">
+        <item name="textAllCaps">false</item>
+        <item name="android:textSize">20sp</item>
+        <item name="color">#ffffff</item>
+    </style>
+
+
+    <declare-styleable name="CustomEditextPassword">
+        <attr name="useStrike" format="boolean"></attr>
+        <attr name="useValid" format="boolean"></attr>
+    </declare-styleable>
+
+    <style name="doiMauRatingBar" parent="AppTheme">
+        <item name="android:colorControlNormal">@color/bgLogo</item>
+    </style>
+
+</resources>
